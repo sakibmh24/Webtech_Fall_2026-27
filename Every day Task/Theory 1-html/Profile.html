@@ -1,60 +1,67 @@
-```html
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
         <title> My Profile </title>
     </head>
-
     <body>
+        <img src="Profile.jpg"height="150px">
+        <h1>Profile</h1>
+        <fieldset>
+                <legend>Personal Information </legend>
+               <table>
+                  <tr>
+                    <td>
+                         <label for="Name">Name:</label>
+                    </td>
+                    <td> <input type="text" name="Name" id="Name" for="Name" placeholder="Enter Your Name" required> </td>
+                 </tr>
 
-        <img src="Profile.jpg" height="150px">
+                <tr>
+                    <td>  
+                        <label for="CGPA">CGPA : </label> 
+                    </td>
+                    <td> 
+                        <input type="number" name="CGPA" id="CGPA" for="CGPA" placeholder="Enter Your CGPA"> 
+                    </td>
+                    
+                </tr>
+                
+                <tr> 
+                    <td>
+                         <label for="DOB"> DOB : </label>
+                    </td>
+                    <td> 
+                        <input type ="date" name ="DOB" id="DOB" for="DOB"> 
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+<br>
+ <h3> User Info</h3>
+<fieldset>
+   
+    <!-- <legend> User Info </legend> -->
+    <table>
+        <tr>
+            <td> <label for="username"> User Name: </label> </td>
+            <td> <input type="text" id="username" for="username"> </td>
+        </tr>
+        <tr>
+            <td> <label for="Password"> Password: </label></td>
+            <td> <input type="password" id="password" for="password"></td>
 
-        <h1> My Profile </h1>
+        </tr>
+    </table>
+</fieldset>
+<br>
 
-        <form>
-
-            <fieldset>
-
-                <legend> Personal Information </legend>
-
-                <table>
-
-                    <tr>
-                        <td>
-                            <label for="Name"> Name : </label>
-                        </td>
-                        <td>
-                            <input type="text" name="Name" id="Name"
-                            placeholder="Enter Your Name">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <label for="CGPA"> CGPA : </label>
-                        </td>
-                        <td>
-                            <input type="number" name="CGPA" id="CGPA"
-                            placeholder="Enter Your CGPA" step="0.01">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <label for="DOB"> Date of Birth : </label>
-                        </td>
-                        <td>
-                            <input type="date" name="DOB" id="DOB">
-                        </td>
-                    </tr>
-
-                </table>
-
-            </fieldset>
+<input type="submit" id="submit" for="submit" value="Signup">
+<input type="reset" id="reset" for="reset">
+        </form>
 
         </form>
 
     </body>
 </html>
-```
+
